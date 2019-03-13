@@ -33,11 +33,11 @@ app.layout = html.Div(children=[
             # configure the data
             'data': [
                 # set x to be weekday, and y to be the counts. We use bars to represent our data.
-                {'x': weekday_in_order, 'y': counts_in_order, 'type': 'bar:', 'name': 'Total'},
-                {'x': weekday_in_order, 'y': ped_s, 'type': 'bar:', 'name': 'Ped_s'},
-                {'x': weekday_in_order, 'y': ped_n, 'type': 'bar:', 'name': 'Ped_n'},
-                {'x': weekday_in_order, 'y': bike_s, 'type': 'bar:', 'name': 'Bike_s'},
-                {'x': weekday_in_order, 'y': bike_n, 'type': 'bar:', 'name': 'Bike_n'},
+                {'x': weekday_in_order, 'y': counts_in_order, 'type': 'bar', 'name': 'Total'},
+                {'x': weekday_in_order, 'y': ped_s, 'type': 'bar', 'name': 'Ped_s'},
+                {'x': weekday_in_order, 'y': ped_n, 'type': 'bar', 'name': 'Ped_n'},
+                {'x': weekday_in_order, 'y': bike_s, 'type': 'bar', 'name': 'Bike_s'},
+                {'x': weekday_in_order, 'y': bike_n, 'type': 'bar', 'name': 'Bike_n'},
 
             ],
             # configure the layout of the visualization --
