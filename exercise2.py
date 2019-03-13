@@ -6,7 +6,7 @@ import dash_html_components as html
 weekday_in_order = ['Saturday', 'Sunday']
 counts_in_order = [160613, 154225, 155175, 150819, 146014, 215725, 203483]
 bike_s = [52642, 50812, 51866, 50913, 49740, 71586, 68147]
-bike_n = [52401, 49449, 50209, 49692, 47971, 69437, 67752]
+
 
 
 app = dash.Dash(__name__)
@@ -24,7 +24,7 @@ dcc.Graph(
                 # set x to be weekday, and y to be the counts. We use bars to represent our data.
                 {'x': weekday_in_order, 'y': counts_in_order, 'type': 'scatterplot', 'name': 'Total'},
                 {'x': weekday_in_order, 'y': bike_s, 'type': 'scatterplot', 'name': 'Bike_s'},
-                {'x': weekday_in_order, 'y': bike_n, 'type': 'scatterplot', 'name': 'Bike_n'},
+
             ],
 
             'layout': {
